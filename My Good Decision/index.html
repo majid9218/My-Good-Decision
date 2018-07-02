@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta type="text/html" name="viewport" content="width=device-width,initial-scale=1" charset="utf-8" />
+        <meta name="theme-color" content="#000000">
+        <title>My Good Decision</title>
+        <link rel="stylesheet" type="text/css" href="assets/css/main.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css">
+    </head>
+    <body>
+
+        <!-- NAVBAR HTML -->
+
+        <div class='nav'>
+            <div>
+                <a id="logo" href="/">My Good Decision</a>
+                <span id="sandwitch" class="sandwitchOff"></span>
+            </div>
+            <div>
+                <a class="sandwitch_off" href="https://www.youtube.com/watch?v=ghc2lex6mKk&t=3s">Example</a>
+                <a class="sandwitch_off" href="https://github.com/majid9218/mygooddecision">GitHub</a>
+            </div>
+        </div>
+
+        <!-- THE LANDING PAGE WITH BACKGROUND SLIDES -->
+
+        <div id="main">
+
+            <button id='start' class="btn">Start</button>
+
+            <div class='slideShow'>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </div>
+
+        </div>
+
+        <!-- FIRST STEP: MAKE A SUBJECT -->
+
+        <div id="subject">
+            <h1><span>.</span><span>.</span></h1>
+            <div>
+                <h2 class='textOff'>Write Down Your Theme</h2>
+                <p class='required'>Theme: cannot be empty!</p>
+                <input class='textOff' type='text' placeholder='for example: what should I do with my savings' value=''/>
+                <button class='btn btn1 btnOff'>Make Choices</button>
+            </div>
+        </div>
+
+        <!-- SECOND STEP: PUTTING THREE CHOICES -->
+
+        <div id="choices" class="back" >
+            <p><span>N</span><span>O</span><span>W</span></p>
+            <h1 class='textOff'><span>Decide For Three Choices You Think They Are More Proper</span><hr /></h1>
+            <div class='container'>
+                <div class='inputContainer'>
+                    <div>
+                        <label for='choice1'>Choice 1:</label>
+                        <span class='required'>Required</span>
+                        <input class='textOff' type='text' id='choice1' placeholder='for example: buy a new car' value=''/>
+                    </div>
+                    <div>
+                        <label for='choice2'>Choice 2:</label>
+                        <span class='required'>Required</span>
+                        <input class='textOff' type='text' id='choice2' placeholder='for example: travel abroad with family' value=''/>
+                    </div>
+                    <div>
+                        <label for='choice3'>Choice 3:</label>
+                        <span class='required'>Required</span>
+                        <input class='textOff' type='text' id='choice3' placeholder='for example: buy stocks' value=''/>
+                    </div>
+                </div>
+                <button class='btn btn1 btnOff'>Create Senario</button>
+            </div>
+        </div>
+
+        <!-- THIRD STEP: CRETING GOOD AND BAD SENARIOS -->
+
+        <div>
+            <div id="result1" class="result">
+                <div class="head_container">
+                    <p class='textOff'><span>I</span><span>M</span><span>A</span><span>G</span><span>I</span><span>N</span><span>E</span></p>
+                    <h2 class='textOff'>For Each Choice You've Put, Whrite Down</h2>
+                    <h3 class='textOff'>Two Good And Two Bad Senarios You Expect</p>
+                </div>
+                <h1 class='textOff'><span></span> - Senarios</h1>
+                <div class="main_container">
+                    <p class='required'>YOU SHOULD WRITE 4 SENARIOS!</p>
+                    <div class="senario_container_good senario_container">
+                        <div class="senario good">
+                            <div>
+                                <textarea  class='textOff' 
+                                           placeholder='WRITE DOWN THE FIRST GOOD SENARIO
+                                                        for example: I will have a nice car, and that makes me happy!' 
+                                           maxlength="200" value=''></textarea>
+                            </div>
+                            <div>
+                                <textarea  class='textOff' 
+                                           placeholder='WRITE DOWN THE SECOND GOOD SENARIO
+                                                        for example: I will be getting out by the car with my family and with my friends, this sounds good!' 
+                                           maxlength="200" value=''></textarea>
+                            </div>
+                        </div>
+                        <div class="skip">
+                            <span class="spanOn">▲</span>
+                            <span class="spanOff">▼</span>
+                        </div>
+                    </div>
+                    <hr />
+                    <div class="senario_container_bad senario_container">
+                        <div class="senario bad">
+                            <div>
+                                <textarea  class='textOff' 
+                                           placeholder='WRITE DOWN THE FIRST BAD SENARIO
+                                                        for example: I will spend all my savings for a car, and I already have an old one!' 
+                                           maxlength="200" value=''></textarea>
+                            </div>
+                            <div>
+                                <textarea  class='textOff' 
+                                           placeholder='WRITE DOWN THE SECOND BAD SENARIO
+                                                        for example: new car! no savings! so lets delay the vacation'
+                                           maxlength="200" value=''></textarea>
+                            </div>
+                        </div>
+                        <div class="skip">
+                            <span class="spanOn">▲</span>
+                            <span class="spanOff">▼</span>
+                        </div>
+                    </div>
+                    <button class='btn btn1 btnOff'>Next</button>
+                </div>
+            </div>
+            <div  id="result2" class="result">
+                <h1 class='textOff'><span></span> - Senarios</h1>
+                <div class="main_container">
+                    <p class='required'>YOU SHOULD WRITE 4 SENARIOS!</p>
+                    <div class="senario_container_good senario_container">
+                        <div class="senario good">
+                            <div>
+                                <textarea  class='textOff' 
+                                           placeholder='WRITE DOWN THE FIRST GOOD SENARIO
+                                                        for example: I will break the routine and keep my self fresh' 
+                                           maxlength="200" value=''></textarea>
+                            </div>
+                            <div>
+                                <textarea  class='textOff' 
+                                           placeholder='WRITE DOWN THE SECOND GOOD SENARIO
+                                                        for example: I will experience new culture and new places' 
+                                           maxlength="200" value=''></textarea>
+                            </div>
+                        </div>
+                        <div class="skip">
+                            <span class="spanOn">▲</span>
+                            <span class="spanOff">▼</span>
+                        </div>
+                    </div>
+                    <hr />
+                    <div class="senario_container_bad senario_container">
+                        <div class="senario bad">
+                            <div>
+                                <textarea  class='textOff' 
+                                           placeholder='WRITE DOWN THE FIRST BAD SENARIO
+                                                        for example: I will keep my old car!' 
+                                           maxlength="200" value=''></textarea>
+                            </div>
+                            <div>
+                                <textarea  class='textOff' 
+                                           placeholder='WRITE DOWN THE SECOND BAD SENARIO
+                                                        for example: I will be in unpaid vacation, and just spending money!' 
+                                           maxlength="200" value=''></textarea>
+                            </div>
+                        </div>
+                        <div class="skip">
+                            <span class="spanOn">▲</span>
+                            <span class="spanOff">▼</span>
+                        </div>
+                    </div>
+                    <button class='btn btn1 btnOff'>Next</button>
+                </div>
+            </div>
+            <div  id="result3" class="result">
+                <h1 class='textOff'><span></span> - Senarios</h1>
+                <div class="main_container">
+                    <p class='required'>YOU SHOULD WRITE 4 SENARIOS!</p>
+                    <div class="senario_container_good senario_container">
+                        <div class="senario good">
+                            <div>
+                                <textarea  class='textOff' 
+                                           placeholder='WRITE DOWN THE FIRST GOOD SENARIO
+                                                        for example: I may increase my money and have additional income' 
+                                           maxlength="200" value=''></textarea>
+                            </div>
+                            <div>
+                                <textarea  class='textOff' 
+                                           placeholder='WRITE DOWN THE SECOND GOOD SENARIO
+                                                        for example: I may get fast profit. Sounds great so I may be able to both travel and buy a car!' 
+                                           maxlength="200" value=''></textarea>
+                            </div>
+                        </div>
+                        <div class="skip">
+                            <span class="spanOn">▲</span>
+                            <span class="spanOff">▼</span>
+                        </div>
+                    </div>
+                    <hr />
+                    <div class="senario_container_bad senario_container">
+                        <div class="senario bad">
+                            <div>
+                                <textarea  class='textOff' 
+                                           placeholder='WRITE DOWN THE FIRST BAD SENARIO
+                                                        for example: Buying stocks does not always mean profit, So I may loose!'
+                                           maxlength="200" value=''></textarea>
+                            </div>
+                            <div>
+                                <textarea  class='textOff' 
+                                           placeholder='WRITE DOWN THE SECOND BAD SENARIO
+                                                        for example: I will always be keeping my eyes on market, More pressure!' 
+                                           maxlength="200" value=''></textarea>
+                            </div>
+                        </div>
+                        <div class="skip">
+                            <span class="spanOn">▲</span>
+                            <span class="spanOff">▼</span>
+                        </div>
+                    </div>
+                    <button class='btn btn1 btnOff'>Make Decision</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- FORTH STEP: ELIMINATING THE SENARIOS ONE BY ONE -->
+
+        <div id='f_make'>
+            <div id="instructions" class="back">
+                <div class='textOff'><p></p></div>
+            </div>
+            <div id="make_good" class="back">
+                <p class='any textOff'><span>pick the least preferrable good senario from these</span> <span>6</span></p>
+                <div class="make">
+                    
+                </div>
+            </div>
+            <div id="make_bad" class="back">
+                <p class='any textOff'><span>pick the least preferrable bad senario from these</span> <span>6</span></p>
+                <div class="make">
+                    
+                </div>
+            </div>
+        </div>
+
+        <!-- FINAL STEP: DISPLAYING THE FINAL DECISION -->
+
+        <div id="final" class="back">
+            <div class='f_container'>
+                <div>
+                    <h1 class='f_head textOff'></h1>
+                    <h2 class='f_head textOff'>Is</h2>
+                </div>
+                <div class = 'rotating'></div>
+                <div class = 'rotating'></div>
+            </div>
+            <div class='f_result'>
+                <h1 textOff><span></span><hr /></h1>
+                <p textOff></p>
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+                integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+                crossorigin="anonymous">
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.js"></script>
+        <script type="text/javascript" src="assets/javascript/main.js"></script>
+        <script type="text/javascript" src="assets/javascript/clicks.js"></script>
+    </body>
+</html>

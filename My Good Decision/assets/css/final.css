@@ -1,0 +1,308 @@
+/* FINAL STEP CSS */
+
+#final .f_container{
+    opacity: 0;
+    -webkit-animation: fadeAnimation 23s cubic-bezier(0.25,.82,.81,1);
+            animation: fadeAnimation 23s cubic-bezier(0.25,.82,.81,1);
+}
+
+#final .f_container div:nth-child(1){
+    position: absolute;
+    left: 30vw;
+    top: 8vw;
+    width: 35vw;
+    height: 35vw;
+}
+
+#final .rotating{
+    position: absolute;
+    border: 0.2vw solid rgba(255, 255, 255, 0.3);
+    border-radius: 35vw;
+}
+
+#final .f_container div:nth-child(2){
+    left: 30vw;
+    top: 8vw;
+    width: 35vw;
+    height: 35vw;
+    border-top: 0.2vw solid rgba(255, 255, 255, 0.8);
+    -webkit-animation: rotation 1.5s linear infinite;
+            animation: rotation 1.5s linear infinite;
+}
+
+#final .f_container div:nth-child(3){
+    left: 30.5vw;
+    top: 8.5vw;
+    width: 34vw;
+    height: 34vw;
+    border: 0.2vw solid rgba(255, 255, 255, 0.8);
+}
+
+#final .f_head{
+    position: absolute;
+    font-size: 1.8em;
+    width: 100%;
+    height: 20%;
+    margin-top: 45%;
+    color: #ffffff;
+    text-align: center;
+    opacity: 0;
+}
+
+#final .f_container div:nth-child(1) h1{
+    animation: opacityAnimation 10s cubic-bezier(0,.82,.81,0.5) 2.5s reverse forwards;
+}
+
+#final .f_container div:nth-child(1) h2{
+    font-size: 2.2em;
+    animation: opacityAnimation 10s cubic-bezier(0,.82,.81,0.5) 13s reverse forwards;
+}
+
+#final .f_result{
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    -webkit-animation: opacityAnimation 2s linear 25s forwards;
+            animation: opacityAnimation 2s linear 25s forwards;
+}
+
+#final .f_result h1{
+    position: absolute;
+    color: #ffffff;
+    width: 80%;
+    height: 20%;
+    left: 10%;
+    top: 50%;
+    text-align: center;
+    font-size: 1.8em;
+    font-weight: 700;
+    opacity: 0;
+    -webkit-animation: opacityAnimation 4s ease-in 23s forwards, moveAnimation 1s linear 27s forwards;
+            animation: opacityAnimation 4s ease-in 23s forwards, moveAnimation 1s linear 27s forwards;
+}
+
+#final .f_result h1 hr{
+    border: 0;
+    height: 1px;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), color-stop(rgba(255, 255, 255, 0.75)), to(rgba(255, 255, 255, 0)));
+    background-image: -webkit-linear-gradient(left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+    background-image: -o-linear-gradient(left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+}
+
+#final .f_result p{
+    position: absolute;
+    color: #ffffff;
+    width: 80%;
+    height: 40%;
+    left: 10%;
+    top: 45%;
+    text-align: center;
+    font-size: 2.4em;
+    letter-spacing: 0.5em;
+    opacity: 0;
+    -webkit-animation: opacityAnimation 4s ease-in 28s forwards;
+            animation: opacityAnimation 4s ease-in 28s forwards;
+}
+
+
+
+@media screen and (max-width: 1050px) {
+    
+    #final .f_container div:nth-child(1){
+        left: 30vw;
+        top: 17vh;
+        width: 40vw;
+        height: 40vw;
+    }
+
+    #final .f_head{
+        font-size: 1.6em;
+    }
+
+    #final .f_container div:nth-child(1) h2{
+        font-size: 1.8em;
+    }
+
+    #final .rotating{
+        border: 0.4vw solid rgba(255, 255, 255, 0.3);
+    }
+    
+    #final .f_container div:nth-child(2){
+        left: 30vw;
+        top: 17vh;
+        width: 40vw;
+        height: 40vw;
+        border-radius: 40vw;
+        border-top: 0.4vw solid rgba(255, 255, 255, 0.8);
+    }
+    
+    #final .f_container div:nth-child(3){
+        left: 31vw;
+        top: calc(17vh + 1vw);
+        width: 38vw;
+        height: 38vw;
+        border-radius: 38vw;
+        border: 0.4vw solid rgba(255, 255, 255, 0.8);
+    }
+    
+    #final .f_result h1{
+        width: 90%;
+        left: 5%;
+        font-size: 1.5em;
+    }
+    #final .f_result p{
+        width: 90%;
+        left: 5%;
+        font-size: 2em;
+    }
+}
+
+@media screen and (max-width: 780px) {
+
+    #final .f_container div:nth-child(1){
+        left: 25vw;
+        top: 22vh;
+        width: 50vw;
+        height: 50vw;
+    }
+    
+    #final .f_container div:nth-child(2){
+        left: 25vw;
+        top: 22vh;
+        width: 50vw;
+        height: 50vw;
+        border-radius: 50vw;
+    }
+    
+    #final .f_container div:nth-child(3){
+        left: 26vw;
+        top: calc(22vh + 1vw);
+        width: 48vw;
+        height: 48vw;
+        border-radius: 48vw;
+    }
+}
+
+@media screen and (max-width: 550px) {
+
+    #final .f_container div:nth-child(1){
+        left: 16vw;
+        top: 20vh;
+        width: 68vw;
+        height: 68vw;
+    }
+
+    #final .f_head{
+        font-size: 1.2em;
+    }
+
+    #final .f_container div:nth-child(1) h2{
+        font-size: 1.4em;
+    }
+
+    #final .rotating{
+        border: 0.75vw solid rgba(255, 255, 255, 0.3);
+    }
+    
+    #final .f_container div:nth-child(2){
+        left: 16vw;
+        top: 20vh;
+        width: 68vw;
+        height: 68vw;
+        border-radius: 68vw;
+        border-top: 0.75vw solid rgba(255, 255, 255, 0.8);
+    }
+    
+    #final .f_container div:nth-child(3){
+        left: 17.5vw;
+        top: calc(20vh + 1.5vw);
+        width: 65vw;
+        height: 65vw;
+        border-radius: 65vw;
+        border: 0.75vw solid rgba(255, 255, 255, 0.8);
+    }
+
+    #final .f_result h1{
+        width: 92%;
+        left: 4%;
+        top: 55%;
+        font-size: 0.9em;
+    }
+    #final .f_result p{
+        width: 92%;
+        left: 4%;
+        top: 45%;
+        font-size: 1.2em;
+    }
+}
+
+
+@media screen and (max-width: 360px) {
+
+    #final .f_container div:nth-child(1){
+        left: 10vw;
+        top: 30vh;
+        width: 80vw;
+        height: 80vw;
+    }
+    
+    #final .f_container div:nth-child(2){
+        left: 10vw;
+        top: 30vh;
+        width: 80vw;
+        height: 80vw;
+        border-radius: 80vw;
+    }
+    
+    #final .f_container div:nth-child(3){
+        left: 15vw;
+        top: calc(30vh + 2vw);
+        width: 76vw;
+        height: 76vw;
+        border-radius: 76vw;
+    }
+}
+
+
+/* EDITTING */
+
+@media screen and (min-aspect-ratio: 7/3){
+    
+    #final .f_container div:nth-child(1){
+        left: 40vw;
+        top: 15vh;
+        width: 20vw;
+        height: 20vw;
+    }
+
+    #final .f_head{
+        font-size: 0.8em;
+    }
+
+    #final .f_container div:nth-child(1) h2{
+        font-size: 1em;
+    }
+
+    #final .rotating{
+        border: 0.1vw solid rgba(255, 255, 255, 0.3);
+    }
+    
+    #final .f_container div:nth-child(2){
+        left: 40vw;
+        top: 15vh;
+        width: 20vw;
+        height: 20vw;
+        border-radius: 20vw;
+        border-top: 0.1vw solid rgba(255, 255, 255, 0.8);
+    }
+    
+    #final .f_container div:nth-child(3){
+        left: 40.5vw;
+        top: calc(10vh + 0.5vw);
+        width: 19vw;
+        height: 19vw;
+        border-radius: 27vw;
+        border: 0.1vw solid rgba(255, 255, 255, 0.8);
+    }
+}
