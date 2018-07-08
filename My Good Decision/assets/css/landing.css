@@ -98,16 +98,3 @@
                 animation: none;
     }
 }
-
-/* EDITTING */
-
-@media screen and (min-aspect-ratio: 7/3){
-    #main #start{
-        height: 10%;
-        top: 96%;
-    }
-
-    #main .slideShow{
-        position: inherit;
-    }
-}
