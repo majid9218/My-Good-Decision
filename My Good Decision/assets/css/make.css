@@ -159,34 +159,3 @@
     }
        
 }
-
-
-/* EDITTING */
-
-@media screen and (min-aspect-ratio: 7/3){
-
-    #instructions p{
-        font-size: 1.2em;
-        width: 70%;
-        margin-left: 15%;
-        height: 50%;
-        margin-top: 10%;
-    }
-    
-    #f_make .make{
-        height: 50%;
-        overflow-y: scroll;
-    }
-    .make p{
-        height: 40%;
-    }
-
-    #f_make .any{
-        height: 10%;
-    }
-
-    .make .empty{
-        height: 0%;
-    }
-    
-}
