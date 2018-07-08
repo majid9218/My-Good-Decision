@@ -185,18 +185,3 @@
         width: 80%;
     }
 }
-
-
-/* EDITTING */ 
-
-@media screen and (min-aspect-ratio: 7/3){
-    #choices p{
-        top: 15%;
-    }
-    #choices .container{
-        top: 25%;
-    }
-    .container .btn{
-        height: 22.5%;
-    }
-}
