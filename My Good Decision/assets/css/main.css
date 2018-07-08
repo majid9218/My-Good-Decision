@@ -291,17 +291,152 @@ body{
 
 /* RESPONSIVE CSS FOR SMARTPHONES SCREEN WITH LANDSCAPE MODE*/
 
-@media screen and (min-aspect-ratio: 7/3){
-    
+@media screen and (max-width:840px)  and (orientation:landscape){
+
     html body{
         height: 120%;
-        overflow: auto;
+        overflow-y: scroll;
     }
-
+    
     #main .btn{
         left: 30vw;
         width: 40vw;
         border: 0.15vw solid rgb(255, 255, 255);
+    }
+    
+    /*----------------------------------------------------*/
+    
+    #main #start{
+        height: 10%;
+        top: 85%;
+    }
+    
+    /*----------------------------------------------------*/
+    
+    #subject div{
+        top: 15%;
+        height: 70%;
+    }
+    #subject div input{
+        height: 12%;
+        margin-bottom: 7vh;
+    }
+    #subject .btn{
+        height: 10vh;
+    }
+    
+    /*----------------------------------------------------*/
+    
+    #choices p{
+        top: 15%;
+    }
+    #choices .container{
+        top: 25%;
+    }
+    .container .btn{
+        height: 22.5%;
+    }
+    
+    /*----------------------------------------------------*/
+    
+    .head_container p{
+        top: 20%;
+        font-size: 6em;
+    }
+    .senario_container{
+        width: 45%;
+    }
+    .main_container hr{
+        display: none;
+    }
+    .result .main_container{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        padding-top: 7%;
+    }
+    .result .btn{
+        width: 35%;
+        height: 10%;
+        margin-bottom: 12%;
+    }
+    .result .required{
+        position: absolute;
+        z-index: 1;
+        top: 15%;
+    }
+    
+    /*----------------------------------------------------*/
+    
+    #instructions p{
+        font-size: 1.1em;
+        width: 70%;
+        margin-left: 15%;
+        height: 50%;
+        margin-top: 10%;
+    }
+    
+    #f_make .make{
+        height: 50%;
+        overflow-y: scroll;
+    }
+    .make p{
+        height: 40%;
+    }
+
+    #f_make .any{
+        font-size: 0.75em;
+        width: 92%;
+        left: 3%;
+        height: 10%;
+    }
+
+    .make .empty{
+        height: 0%;
+    }
+    
+    /*----------------------------------------------------*/
+    
+    #final .f_container div:nth-child(1){
+        left: 38vw;
+        top: 24vh;
+        width: 24vw;
+        height: 24vw;
+    }
+
+    #final .f_head{
+        font-size: 0.8em;
+    }
+
+    #final .f_container div:nth-child(1) h2{
+        font-size: 1em;
+    }
+
+    #final .rotating{
+        border: 0.1vw solid rgba(255, 255, 255, 0.3);
+    }
+    
+    #final .f_container div:nth-child(2){
+        left: 38vw;
+        top: 24vh;
+        width: 24vw;
+        height: 24vw;
+        border-radius: 24vw;
+        border-top: 0.1vw solid rgba(255, 255, 255, 0.8);
+    }
+    
+    #final .f_container div:nth-child(3){
+        left: 38.5vw;
+        top: calc(24vh + 0.5vw);
+        width: 23vw;
+        height: 23vw;
+        border-radius: 23vw;
+        border: 0.1vw solid rgba(255, 255, 255, 0.8);
     }
 }
 
