@@ -138,19 +138,3 @@
         width: 40%;
     }
 }
-
-/* EDITTING */
-
-@media screen and (min-aspect-ratio: 7/3){
-    #subject div{
-        top: 15%;
-        height: 70%;
-    }
-    #subject div input{
-        height: 12%;
-        margin-bottom: 7vh;
-    }
-    #subject .btn{
-        height: 10vh;
-    }
-}
