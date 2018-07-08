@@ -333,38 +333,3 @@
             flex-basis: 6%;
     }
 }
-
-/* EDITTING */
-
-@media screen and (min-aspect-ratio: 7/3){
-    .head_container p{
-        top: 20%;
-        font-size: 6em;
-    }
-    .senario_container{
-        width: 45%;
-    }
-    .main_container hr{
-        display: none;
-    }
-    .result .main_container{
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
-        padding-top: 7%;
-    }
-    .result .btn{
-        width: 30%;
-        margin-bottom: 10%;
-    }
-    .result .required{
-        position: absolute;
-        z-index: 1;
-        top: 15%;
-    }
-}
